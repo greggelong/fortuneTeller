@@ -70,7 +70,7 @@ function setup() {
 
 function draw() {
   background(255);
-  
+  pixelDensity(1)
   // Display the chosen color
   fill(selectedColor);
   push()
