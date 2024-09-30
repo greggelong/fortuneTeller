@@ -102,9 +102,9 @@ function speakFortune() {
   let fortuneIndex 
   // forutune is number 
   if(selectedColor ==="red" || selectedColor ==="yellow"){
-    fortuneIndex = floor(random(8))  // 0 to 7
+    fortuneIndex = selectedNumber-1  // 0 to 7
   }else{
-    fortuneIndex = floor(random(8,16)) // 8 to 15  index
+    fortuneIndex = (selectedNumber-1)*2 // 8 to 15  index
   }
   //let randomFortune = random(fortunes); // Pick a random fortune
   let randomFortune = fortunes[fortuneIndex]
